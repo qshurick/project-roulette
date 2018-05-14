@@ -1,0 +1,27 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <h1>Project roulette</h1>
+    <ol id="projects"></ol>
+    <div>
+        <input type="text" id="project-name"/>
+        <button id="add-project">Add project</button>
+    </div>
+    <button id="choose">Shoot!</button>
+    <div class="revolver">
+        <div class="bullet"></div>
+        <div class="bullet"></div>
+        <div class="bullet"></div>
+        <div class="bullet"></div>
+        <div class="bullet"></div>
+        <div class="bullet"></div>
+        <div class="hole"></div>
+    </div>
+    <script type='application/javascript' src='/javascripts/roulette.js'></script>
+    <audio id="load-sound" preload="auto">
+        <source src="/sounds/gun-cocking-01.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="shot-sound" preload="auto">
+        <source src="/sounds/gun-gunshot-01.mp3" type="audio/mpeg">
+    </audio>
+{% endblock %}

@@ -1,0 +1,46 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+li {
+  padding: 2vh;
+}
+
+.revolver {
+  width: 30vh;
+  height: 30vh;
+  background: #738296;
+  border-radius: 15vh;
+  position: relative;
+}
+
+.bullet {
+  width: 6vh;
+  height: 6vh;
+  background: #480505;
+  position: absolute;
+  border-radius: 3vh;
+  top: -3vh;
+  left: -3vh;
+  transform: translate(15vh, 15vh);
+  text-align: center;
+  line-height: 6vh;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.hole {
+  width: 10vh;
+  height: 10vh;
+  background: white;
+  position: absolute;
+  border-radius: 5vh;
+  top: -5vh;
+  left: -5vh;
+  transform: translate(15vh, 15vh);
+}
