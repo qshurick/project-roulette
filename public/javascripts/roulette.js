@@ -41,7 +41,7 @@ function addProject(name, projectList, bullets) {
   return true;
 }
 
-(function (projects) {
+(function () {
   const projectName = document.getElementById('project-name');
   const projectList = document.getElementById('projects');
   const roulette = document.getElementsByClassName('revolver')[0];
@@ -103,4 +103,4 @@ function addProject(name, projectList, bullets) {
       window.requestAnimationFrame(rotate);
     })();
   });
-})(projects);
+})();
