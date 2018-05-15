@@ -1,0 +1,10 @@
+[
+  {
+    "uid": "project-roulette",
+    "append": true,
+    "watch": true,
+    "script": "bin/www",
+    "sourceDir": "."
+
+  }
+]
