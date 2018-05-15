@@ -65,7 +65,6 @@ function addProject(name, projectList, bullets) {
   document.getElementById('choose').addEventListener('click', function () {
     document.getElementById('add-project').disabled = true;
     projectName.disabled = true;
-    const list = document.querySelectorAll('#projects li');
     this.disabled = true;
 
     if (projects.length < 6) {
@@ -74,6 +73,7 @@ function addProject(name, projectList, bullets) {
       }
     }
 
+    const list = document.querySelectorAll('#projects li');
     const projectIndex = Math.floor(Math.random() * projects.length);
 
     const stopAngle = spins * 360 + bulletHolderAngle * projectIndex;
