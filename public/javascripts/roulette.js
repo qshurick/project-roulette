@@ -43,7 +43,7 @@ function addProject(name, projectList, bullets) {
 
 (function () {
   const projectName = document.getElementById('project-name');
-  const projectList = document.getElementById('project');
+  const projectList = document.getElementById('projects');
   const roulette = document.getElementsByClassName('revolver')[0];
   const bullets = document.getElementsByClassName('bullet');
 
@@ -73,7 +73,7 @@ function addProject(name, projectList, bullets) {
       }
     }
 
-    const list = document.querySelectorAll('#projectStorage li');
+    const list = document.querySelectorAll('#projects li');
     const projectIndex = Math.floor(Math.random() * projectStorage.length);
 
     const stopAngle = spins * 360 + bulletHolderAngle * projectIndex;
