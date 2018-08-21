@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>Project roulette</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='preload' href='/stylesheets/style.css' as='style' onload='this.rel = "stylesheet"' />
+    <noscript>
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+    </noscript>
   </head>
   <body>
     {% block body %}{% endblock %}
